@@ -19,7 +19,8 @@
       "google-drive-security.com",
       "linkedin-connection-verify.net",
       "twitter-account-confirm.com",
-      "icloud-backup-verify.org"
+      "icloud-backup-verify.org",
+      "https://fx-event.com.tr/TYO/PS/?id=8001689653"
     ],
     
     "recent_malicious_domains": [
@@ -38,7 +39,7 @@
     "typosquatting_keywords": [
       "paypall", "facebok", "micorsoft", "amazoon", "netfliks",
       "whatsappp", "instagarm", "gooogle", "twittter", "linkdedin",
-      "appple", "bankofamerrica", "wellsfargo", "chasee"
+      "appple", "bankofamerrica", "wellsfargo", "chasee", "free"
     ],
     
     "phishing_keywords": [
@@ -46,12 +47,15 @@
       "confirm", "validation", "authentication", "billing",
       "payment", "urgent", "immediate", "action-required",
       "suspended", "limited", "verification", "reactivate",
-      "unauthorized", "fraud", "unusual", "activity", "event"
+      "unauthorized", "fraud", "unusual", "activity", "event","freehot", "hotvidoes", "reward", "freee fire",
+      "ffevent", "ffreward", "freefollowers", "instafollowers", "freeig", "facebookfollowers", "instagramfollowers",
+      "freefirediamonds", "diamondhub", "freereward", "freemoney", "money", "earnfree", "freeporn", "loged out", "paisa", "snapchatto", "diwaliaward", "award",
+      "freeyojna", "freereahcrge", "freereacharge", "reachargehub", "onion" 
     ],
     
     "suspicious_tlds": [
       ".tk", ".ml", ".ga", ".cf", ".xyz", ".top", ".club",
-      ".loan", ".download", ".stream", ".gq", ".work"
+      ".loan", ".download", ".stream", ".gq", ".work", ".mk"
     ]
   },
 
@@ -94,7 +98,8 @@
       "update your payment information",
       "confirm your personal details",
       "security alert: unauthorized access",
-      "your subscription will be cancelled"
+      "your subscription will be cancelled",
+      "Freehotvideos"
     ],
     
     "urgency_indicators": [
@@ -116,7 +121,7 @@
     ],
     
     "safe_tlds": [
-      ".com", ".org", ".net", ".edu", ".gov", ".mil"
+      ".com", ".org", ".net", ".edu", ".gov", ".mil", ".in"
     ]
   },
 

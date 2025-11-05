@@ -1,0 +1,139 @@
+{
+  "version": "2.0",
+  "last_updated": "2024-06-19",
+  "description": "Smart phishing detection with multi-layer analysis",
+  
+  "immediate_blacklist": {
+    "known_phishing_domains": [
+      "paypal-security-center.com",
+      "facebook-login-secure.net",
+      "apple-id-verification.org",
+      "microsoft-account-update.com",
+      "amazon-payment-verification.co",
+      "netflix-billing-update.xyz",
+      "whatsapp-web-login.com",
+      "instagram-verify-account.net",
+      "bankofamerica-securelogin.com",
+      "wellsfargo-online-banking.org",
+      "chase-account-alert.com",
+      "google-drive-security.com",
+      "linkedin-connection-verify.net",
+      "twitter-account-confirm.com",
+      "icloud-backup-verify.org"
+    ],
+    
+    "recent_malicious_domains": [
+      "secure-paypal-login.xyz",
+      "fb-account-recovery.com",
+      "apple-support-center.net",
+      "msn-security-update.com",
+      "amazon-prime-renewal.org",
+      "netflix-payment-failed.com",
+      "whatsapp-plus-download.com",
+      "insta-profile-verification.net"
+    ]
+  },
+
+  "suspicious_patterns": {
+    "typosquatting_keywords": [
+      "paypall", "facebok", "micorsoft", "amazoon", "netfliks",
+      "whatsappp", "instagarm", "gooogle", "twittter", "linkdedin",
+      "appple", "bankofamerrica", "wellsfargo", "chasee"
+    ],
+    
+    "phishing_keywords": [
+      "verify", "secure", "login", "account", "update", "security",
+      "confirm", "validation", "authentication", "billing",
+      "payment", "urgent", "immediate", "action-required",
+      "suspended", "limited", "verification", "reactivate",
+      "unauthorized", "fraud", "unusual", "activity"
+    ],
+    
+    "suspicious_tlds": [
+      ".tk", ".ml", ".ga", ".cf", ".xyz", ".top", ".club",
+      ".loan", ".download", ".stream", ".gq", ".work"
+    ]
+  },
+
+  "brand_protection": {
+    "legitimate_domains": [
+      "paypal.com", "facebook.com", "apple.com", "microsoft.com",
+      "amazon.com", "netflix.com", "whatsapp.com", "instagram.com",
+      "google.com", "twitter.com", "linkedin.com", "chase.com",
+      "bankofamerica.com", "wellsfargo.com", "icloud.com"
+    ],
+    
+    "brand_impersonation_patterns": [
+      "paypal-secure", "facebook-login", "apple-verify", 
+      "microsoft-account", "amazon-payment", "netflix-billing",
+      "whatsapp-web", "instagram-confirm", "google-drive",
+      "twitter-security", "linkedin-connection", "chase-alert"
+    ]
+  },
+
+  "technical_indicators": {
+    "ip_addresses": [
+      "192.168.1.1", "10.0.0.1", "172.16.0.1", "127.0.0.1",
+      "169.254.0.1", "100.64.0.1"
+    ],
+    
+    "suspicious_ports": ["8080", "8443", "2095", "2096", "2082", "2083"],
+    
+    "hex_encoded_urls": [
+      "%68%74%74%70%73",  // https in hex
+      "%77%77%77"         // www in hex
+    ]
+  },
+
+  "behavioral_patterns": {
+    "social_engineering_phrases": [
+      "your account will be suspended",
+      "immediate action required",
+      "click here to verify your identity",
+      "unusual login attempt detected",
+      "update your payment information",
+      "confirm your personal details",
+      "security alert: unauthorized access",
+      "your subscription will be cancelled"
+    ],
+    
+    "urgency_indicators": [
+      "within 24 hours", "immediately", "right now", "urgent",
+      "as soon as possible", "last chance", "final warning",
+      "immediate action", "take action now"
+    ]
+  },
+
+  "whitelist": {
+    "trusted_domains": [
+      "paypal.com", "www.paypal.com", "facebook.com", "www.facebook.com",
+      "apple.com", "www.apple.com", "microsoft.com", "www.microsoft.com",
+      "amazon.com", "www.amazon.com", "netflix.com", "www.netflix.com",
+      "whatsapp.com", "web.whatsapp.com", "instagram.com", "www.instagram.com",
+      "google.com", "www.google.com", "twitter.com", "www.twitter.com",
+      "linkedin.com", "www.linkedin.com", "chase.com", "www.chase.com",
+      "bankofamerica.com", "www.bankofamerica.com", "wellsfargo.com", "www.wellsfargo.com"
+    ],
+    
+    "safe_tlds": [
+      ".com", ".org", ".net", ".edu", ".gov", ".mil"
+    ]
+  },
+
+  "scoring_system": {
+    "high_risk_threshold": 7,
+    "medium_risk_threshold": 4,
+    
+    "risk_scores": {
+      "known_phishing_domain": 10,
+      "suspicious_tld": 3,
+      "typosquatting": 4,
+      "phishing_keyword": 2,
+      "brand_impersonation": 5,
+      "suspicious_port": 3,
+      "social_engineering_phrase": 3,
+      "urgency_indicator": 2,
+      "hex_encoding": 4
+    }
+  }
+}

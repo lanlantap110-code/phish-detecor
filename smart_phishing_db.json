@@ -46,7 +46,7 @@
       "confirm", "validation", "authentication", "billing",
       "payment", "urgent", "immediate", "action-required",
       "suspended", "limited", "verification", "reactivate",
-      "unauthorized", "fraud", "unusual", "activity"
+      "unauthorized", "fraud", "unusual", "activity", "event"
     ],
     
     "suspicious_tlds": [
